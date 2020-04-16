@@ -1,8 +1,8 @@
 import Vue from "vue"
 import Router from "vue-router"
 import Home from "./views/Home.vue"
-import Patient from "./views/Patients.vue"
-import Order from "./views/Orders.vue"
+import Patients from "./views/Patients.vue"
+import Orders from "./views/Orders.vue"
 
 
 Vue.use(Router)
