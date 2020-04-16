@@ -16,6 +16,11 @@
   - `$ npm install`
   - `$ npm run build`
   - `$ npm run serve`
+  - Navigate to `http://localhost:8080/`
   
   Or, for user interface, run:
   - `$ vue ui`
+  - Select `Tasks` on left menu
+  - Select `serve` under Project tasks
+  - Select `Run Task`
+  - Select `Open app` to view in browser
