@@ -23,7 +23,7 @@ export default {
 
   // fetch posts when component is made
   created() {
-    axios.get('http://api.develop.processmaker.com/api/patients', options).then(response => {
+    axios.get('http://api.develop.processmaker.com/api/patients').then(response => {
         console.log(response)
     })
   }
