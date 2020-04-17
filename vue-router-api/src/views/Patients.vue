@@ -1,7 +1,12 @@
 <template>
   <div class="patients">
     <h1>Patients</h1>
-    <p>{{ many }}</p>
+    <div id="patient-list">
+      <div v-for="one in many" :key="one.id">
+        <p>Patient id: {{ one.id }}, 
+        {{ one.firstname }} {{ one.lastname }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
