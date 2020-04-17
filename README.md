@@ -22,7 +22,6 @@
   - `$ npm install`
   - `$ npm run build`
   - `$ npm run serve`
-  - Navigate to `http://localhost:8080/`
   
   Or, for user interface, run:
   - `$ vue ui`
@@ -30,3 +29,8 @@
   - Select `serve` under Project tasks
   - Select `Run Task`
   - Select `Open app` to view in browser
+  
+## Using the interface in a browser
+- Navigate to `http://localhost:8080/`
+- Select `Patients` to view a list of patients sorted by id
+- Select `Orders` to view a list of orders sorted by id
