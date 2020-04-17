@@ -1,9 +1,6 @@
 <template>
   <div class="patients">
-    <h1>Patients</h1>
-    <p>test</p>
-    <p>{{many}}</p>
-    <p>test 2</p>
+    <h1>Orders</h1>
   </div>
 </template>
 

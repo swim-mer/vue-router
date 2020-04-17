@@ -1,11 +1,6 @@
 <template>
   <div class="patients">
     <h1>Patients</h1>
-    <p>test</p>
-    <p>{{many}}</p>
-    <p>test 2</p>
-
-      <input v-model="msg">
   </div>
 </template>
 
