@@ -12,10 +12,6 @@
 <script>
 import axios from 'axios'
 
-const options = {
-  headers: {'Access-Control-Allow-Origin': '*'}
-}
-
 export default {
   name: 'patients',
   data () {
@@ -27,13 +23,12 @@ export default {
 
   // fetch posts when component is made
   created() {
-    axios.get('http://api.develop.processmaker.com/api/patients', options)
-      .then(response => {
-
+    axios.get('http://api.develop.processmaker.com/api/patients', options).then(response => {
         console.log(response)
-      })
+    })
   }
 }
+
 </script>
 
 <style scoped>
