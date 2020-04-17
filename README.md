@@ -10,6 +10,12 @@
   - `$ npm install -g @vue/cli`
 - Install global addon for `vue serve`:
   - `$ npm install -g @vue/cli-service-global`
+- Install yarn
+  - `$ brew install yarn`
+- Download axios
+  - `$ yarn add axios`
+- Install axios
+  - `$ npm install axios --save`
 
 ## Running the server on a Mac
 - Inside root directory of `vue-router-api`:
