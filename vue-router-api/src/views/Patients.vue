@@ -1,20 +1,37 @@
 <template>
   <div class="patients">
     <h1>Patients</h1>
-    <span v-bind:title="msg">
+    <p>test</p>
+    <p>{{many}}</p>
+    <p>test 2</p>
+
       <input v-model="msg">
-    </span>
   </div>
 </template>
 
 <script>
-// read from api
+import axios from 'axios'
+
+const options = {
+  headers: {'Access-Control-Allow-Origin': '*'}
+}
+
 export default {
   name: 'patients',
   data () {
     return {
-      msg: 'id'
+      many: [],
+      msg: 'Enter id here'
     }
+  },
+
+  // fetch posts when component is made
+  created() {
+    axios.get('http://api.develop.processmaker.com/api/patients', options)
+      .then(response => {
+
+        console.log(response)
+      })
   }
 }
 </script>
