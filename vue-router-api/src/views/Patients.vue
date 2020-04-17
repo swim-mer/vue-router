@@ -7,6 +7,11 @@
         {{ one.firstname }} {{ one.lastname }}</p>
       </div>
     </div>
+    <div>
+      Enter patient id to see more information: 
+      <input v-model="msg">
+      <button v-on:click="getList">Submit</button>
+    </div>
   </div>
 </template>
 
@@ -18,7 +23,16 @@ export default {
   data () {
     return {
       many: [],
-      msg: 'Enter id here'
+      msg: 'Enter id here',
+      patient: {}
+    }
+  },
+  methods: {
+    getList: function() {
+      axios.get('http://api.develop.processmaker.com/api/patients/${msg}').then(response => {
+        console.log(response.data)
+        this.patient = response
+      })
     }
   },
 
