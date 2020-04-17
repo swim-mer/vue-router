@@ -1,6 +1,12 @@
 <template>
-  <div class="patients">
+  <div class="orders">
     <h1>Orders</h1>
+    <div id="order-list">
+      <div v-for="one in many" :key="one.id">
+        <p>Order id: {{ one.id }}, {{ one.description }}, 
+        Patient id: {{ one.patient.id }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,6 +26,7 @@ export default {
   created() {
     axios.get('http://api.develop.processmaker.com/api/orders').then(response => {
         console.log(response)
+        this.many = response.data.data
     })
   }
 }
